@@ -25,7 +25,6 @@ namespace CheeseMVC.Controllers
 		public IActionResult Index()
 		{
 			var categories = context.Categories.ToList();
-			Debug.WriteLine(categories);
 			return View(categories);
 		}
 
